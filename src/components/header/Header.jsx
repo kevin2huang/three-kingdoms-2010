@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import HeaderMenuItems from "./mega-menu/HeaderMenuItems";
-import HeaderMenuItemsMobile from "./mega-menu/HeaderMenuItemsMobile";
+import HeaderMenuItems from "./menu/HeaderMenuItems";
+import HeaderMenuItemsMobile from "./menu/HeaderMenuItemsMobile";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -42,20 +42,6 @@ const Header = () => {
                 <div className="d-lg-flex align-items-center">
                   <HeaderMenuItems />
                   {/* End Header Menu */}
-
-                  <ul className="right-button-group d-flex align-items-center justify-content-center">
-                    <li>
-                      <Link to="login" className="signIn-action">
-                        Login
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="signup" className="theme-btn-five">
-                        Create your event
-                      </Link>
-                    </li>
-                  </ul>
-                  {/* End right-button-group  */}
                 </div>
               </div>
             </div>
