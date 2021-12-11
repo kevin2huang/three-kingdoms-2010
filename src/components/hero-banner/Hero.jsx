@@ -1,59 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FeaturesEight from "../features/FeaturesEight";
+import PosterImage from "../../assets/images/poster.jpeg"
 
 const HeroBannerFour = () => {
   return (
     <div className="hero-banner-four">
-      <img
-        src="images/shape/100.svg"
-        alt="shape"
-        className="shapes shape-four"
-      />
-      <img
-        src="images/shape/101.svg"
-        alt="shape"
-        className="shapes shape-five"
-      />
-      <img
-        src="images/shape/102.svg"
-        alt="shape"
-        className="shapes shape-six"
-      />
-      <img
-        src="images/shape/103.svg"
-        alt="shape"
-        className="shapes shape-seven"
-      />
-
       <div className="container">
         <div className="row">
           <div className="col-lg-6 order-lg-last">
             <div className="illustration-holder">
               <img
-                src="images/assets/ils_14.svg"
+                src={PosterImage}
                 alt="shape"
                 className="illustration"
               />
-              <img
-                src="images/assets/ils_14.1.svg"
-                alt="shape"
-                className="shapes shape-one"
-              />
-              <img
-                src="images/assets/ils_14.2.svg"
-                alt="shape"
-                className="shapes shape-two"
-              />
-              <img
-                src="images/assets/ils_14.3.svg"
-                alt="shape"
-                className="shapes shape-three"
-              />
             </div>
-            <p className="review-text">
+            {/* <p className="review-text">
               Over <span>150,000+ client</span> all over the world.
-            </p>
+            </p> */}
           </div>
           {/* End .col */}
 

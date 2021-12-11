@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "../components/header/Header";
-import HeroBannerFour from "../components/hero-banner/HeroBannerFour";
+import Hero from "../components/hero-banner/Hero";
 import Characters from "../components/characters/Characters";
 import About from "../components/about/About";
 import FeatureNine from "../components/features/FeatureNine";
@@ -19,7 +19,7 @@ const Homepage = () => {
       <Header />
       {/* End HeaderFour */}
 
-      <HeroBannerFour />
+      <Hero />
       {/* End Hero Banner Four */}
 
       <Characters />
