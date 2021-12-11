@@ -94,16 +94,15 @@ import Homepage from "../views/Homepage";
 import NotFound from "../views/NotFound";
 
 // Route Specific
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
 
 const AllRoutes = () => {
   return (
     <>
-      <Router>
         <ScrollTopBehaviour />
         <Routes>
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/" element={<Homepage />} />
           {/* <Route path="/event-organizer" component={EventOrganizer} />
           <Route path="/doc-landing" component={DocLanding} />
           <Route path="/doc-signature" component={DocSignatureLanding} />
@@ -199,9 +198,8 @@ const AllRoutes = () => {
           <Route path="/404" component={NotFound} /> */}
 
           {/* NotFound Route */}
-          <Route component={NotFound} />
+          <Route element={<NotFound />} />
         </Routes>
-      </Router>
     </>
   );
 };
