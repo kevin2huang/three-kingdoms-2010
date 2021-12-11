@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import AllRoutes from "./router/AllRoutes";
+// import ScrollToTop from "./components/ScrollToTop";
 import './App.css';
 
 function App() {
   return (
     <>
-    <AllRoutes />
+      <AllRoutes />
     </>
   );
 }
