@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Header from "../components/header/HeaderFour";
+import Header from "../components/header/Header";
 import HeroBannerFour from "../components/hero-banner/HeroBannerFour";
+import Characters from "../components/characters/Characters";
 import About from "../components/about/About";
 import FeatureNine from "../components/features/FeatureNine";
-import PricingThree from "../components/pricing/PricingThree";
-import TestimonialThree from "../components/testimonial/TestimonialThree";
 import FooterFour from "../components/footer/FooterFour";
 
-const EventOrganizer = () => {
+const Homepage = () => {
   return (
     <div className="main-page-wrapper p0">
       <Helmet>
-        <title>Event Organizer || Deski-Saas & Software React Template</title>
+        <title>Three Kingdoms 2010</title>
       </Helmet>
       {/* End Page SEO Content */}
 
@@ -22,6 +21,8 @@ const EventOrganizer = () => {
 
       <HeroBannerFour />
       {/* End Hero Banner Four */}
+
+      <Characters />
 
       {/* 
      =============================================
@@ -99,7 +100,6 @@ const EventOrganizer = () => {
                 </h2>
               </div>
               {/* End title */}
-              <Faq />
             </div>
 
             <div
@@ -167,10 +167,6 @@ const EventOrganizer = () => {
               </div>
             </div>
           </div>
-
-          <div className="pricing-table-area-three">
-            <PricingThree />
-          </div>
           {/* /.pricing-table-area-three */}
         </div>
         {/* ./container */}
@@ -193,17 +189,6 @@ const EventOrganizer = () => {
             </div>
           </div>
           {/* End title */}
-          <div className="row">
-            <div className="col-xl-7 col-lg-9 m-auto">
-              <div className="testimonial-slider-wrapper">
-                <img src="images/icon/65.svg" alt="icon" className="m-auto" />
-                <div className="clientSliderThree">
-                  <TestimonialThree />
-                </div>
-              </div>
-              {/* /.testimonial-slider-wrapper */}
-            </div>
-          </div>
         </div>
         {/* /.container */}
         <img
@@ -275,4 +260,4 @@ const EventOrganizer = () => {
   );
 };
 
-export default EventOrganizer;
+export default Homepage;
