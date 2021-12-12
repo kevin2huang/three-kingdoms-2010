@@ -20,6 +20,13 @@ const HeaderMenuItems = () => {
       </li>
       <li className="nav-item position-static">
         <a className="nav-link" href="#">
+        <Link to="/transcripts">
+          Quotes
+        </Link>
+        </a>
+      </li>
+      <li className="nav-item position-static">
+        <a className="nav-link" href="#">
           <Link to="/about">
             About
           </Link>
