@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FeaturesEight from "../features/FeaturesEight";
+import ThreeKingdomsSummary from "../features/ThreeKingdomsSummary";
 import PosterImage from "../../assets/images/poster.jpeg"
 import WordBank from "../word-bank/WordBank";
 
@@ -69,10 +69,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="fancy-feature-eight mt-160 md-mt-100">
+      <div className="fancy-feature-eight mt-80">
         <div className="container">
           <div className="bg-wrapper">
-            <FeaturesEight />
+            <ThreeKingdomsSummary />
           </div>
         </div>
       </div>
