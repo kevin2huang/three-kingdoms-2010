@@ -2,18 +2,39 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FeaturesEight from "../features/FeaturesEight";
 import PosterImage from "../../assets/images/poster.jpeg"
+import WordBank from "../word-bank/WordBank";
 
-const HeroBannerFour = () => {
+const Hero = () => {
+
+  const headerSentenceChinese = WordBank[0].hanzi + 
+                                WordBank[1].hanzi + 
+                                WordBank[2].hanzi + 
+                                WordBank[3].hanzi + 
+                                WordBank[4].hanzi +
+                                WordBank[5].hanzi +
+                                ", " +
+                                WordBank[6].hanzi +
+                                WordBank[7].hanzi +
+                                WordBank[8].hanzi +
+                                WordBank[9].hanzi +
+                                ", " + 
+                                WordBank[9].hanzi +
+                                WordBank[7].hanzi +
+                                WordBank[8].hanzi +
+                                WordBank[6].hanzi;
+  
+  const headerSentenceEnglish = "The empire, long divided, must unite; long united, must divide. Thus it has ever been.";
+
   return (
     <div className="hero-banner-four">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 order-lg-last">
-            <div className="illustration-holder">
+            <div className="hero-img">
               <img
                 src={PosterImage}
                 alt="shape"
-                className="illustration"
+                className="poster"
               />
             </div>
             {/* <p className="review-text">
@@ -25,7 +46,7 @@ const HeroBannerFour = () => {
           <div className="col-lg-6 order-lg-first">
             <div className="text-wrapper">
               <h1 data-aos="fade-up" data-aos-duration="1200">
-                <span>Event ticket</span> organiser & seller.
+                {headerSentenceChinese}
               </h1>
               <p
                 className="sub-text"
@@ -33,20 +54,15 @@ const HeroBannerFour = () => {
                 data-aos-duration="1200"
                 data-aos-delay="100"
               >
-                For hassale free event, we are here to help you by creating
-                online ticket.
+                {headerSentenceEnglish}
               </p>
-              <Link
-                to="/login"
-                className="theme-btn-five"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="200"
-              >
-                {" "}
-                Let’s get started
-              </Link>
+              <div className="icon-center">
+                <div className="mouse-scroll" data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="200"></div>
+              </div>
             </div>
+              
             {/* /.text-wrapper */}
           </div>
           {/* End .col */}
@@ -66,4 +82,4 @@ const HeroBannerFour = () => {
   //  {/* /.hero-banner-four */}
 };
 
-export default HeroBannerFour;
+export default Hero;
