@@ -393,6 +393,12 @@ h6 {
 .illustration-holder {
   position: relative;
 }
+.hero-img {
+  position: relative;
+}
+.hero-img .poster {
+  max-height: 80vh;
+}
 .shapes {
   position: absolute;
   z-index: -1;
@@ -7482,8 +7488,8 @@ body .theme-btn-thirteen:hover {
 /*=======================================================================
                               Event               
 =========================================================================*/
-.theme-main-menu.sticky-menu.fixed.theme-menu-four {
-  background: #fbf3ec;
+.theme-main-menu .sticky-menu .fixed .theme-menu-four {
+  background: white;
 }
 .theme-menu-four .logo img {
   max-width: 120px;
@@ -7510,36 +7516,53 @@ body .theme-btn-thirteen:hover {
 /*---------------------- Theme Hero Banner/Four ---------------*/
 .hero-banner-four {
   position: relative;
-  background: #fbf3ec;
-  padding: 250px 0 110px;
+  background: white;
+  padding: 150px 0 0px;
   z-index: 1;
 }
-.hero-banner-four:before {
-  content: "";
-  position: absolute;
+.icon-center {
   width: 100%;
-  height: 103px;
-  left: 0;
-  bottom: -100px;
-  background: url(../images/shape/99.svg) no-repeat center bottom;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero-banner-four .shape-four {
-  top: 1%;
-  left: 15%;
+.mouse-scroll {
+	width: 50px;
+	height: 90px;
+	border: 3px solid #333;
+	border-radius: 60px;
+	position: relative;
+  // justify-content: center;
+	&::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #333;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
 }
-.hero-banner-four .shape-five {
-  top: 11%;
-  right: 31%;
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
 }
-.hero-banner-four .shape-six {
-  bottom: 5%;
-  left: 0;
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
 }
-.hero-banner-four .shape-seven {
-  bottom: 8%;
-  right: 0;
-}
+
 .hero-banner-four h1 {
   font-family: "Roboto Slab", serif;
   font-size: 85px;
@@ -7600,35 +7623,25 @@ body .theme-btn-thirteen:hover {
   z-index: 1;
   animation: jump10p 5s infinite linear;
 }
+
 /*-------------Fancy Feature Eight -----------*/
+.fancy-feature-eight {
+  background-color: #f8f8f8;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
 .fancy-feature-eight .bg-wrapper {
   position: relative;
   z-index: 5;
-  background: #fff;
   padding: 35px 0 42px;
-}
-.fancy-feature-eight .bg-wrapper:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 24px;
-  background: url(../images/shape/97.svg) no-repeat center top;
-  left: 0;
-  top: -20px;
-}
-.fancy-feature-eight .bg-wrapper:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 13px;
-  background: url(../images/shape/98.svg) no-repeat center bottom;
-  left: 0;
-  bottom: -10px;
 }
 .block-style-thirteen {
   position: relative;
   text-align: center;
   padding: 32px 40px 20px;
+  border-style: solid;
+  border-color: black;
+  background-color: #fff;
 }
 .block-style-thirteen.style-border {
   border-left: 1px solid #e7e7e7;
@@ -7642,7 +7655,7 @@ body .theme-btn-thirteen:hover {
   max-height: 100%;
 }
 .block-style-thirteen .title {
-  font-size: 18px;
+  font-size: 1.75rem;
   color: rgba(0, 0, 0, 0.63);
   padding: 15px 0 20px;
 }
