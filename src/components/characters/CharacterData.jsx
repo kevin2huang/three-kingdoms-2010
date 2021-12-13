@@ -2,74 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-const All = [
-  { img: "img_07", title: "Maurice Craig", designation: "Co-Founder" },
-  {
-    img: "img_08",
-    title: "Duane Cain",
-    designation: "Senior Product Desogner",
-  },
-  { img: "img_09", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_10", title: "Maurice Craig", designation: "Co-Founder" },
-  {
-    img: "img_11",
-    title: "Nina Walters",
-    designation: "Senior Product Desogner",
-  },
-  { img: "img_12", title: "Nathaniel Burke", designation: "Co-Founder" },
-  { img: "img_13", title: "Maurice Craig", designation: "Co-Founder" },
-  { img: "img_14", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_15", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_16", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_17", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_18", title: "Viola George", designation: "Co-Founder" },
+const ShuHan = [
+  { img: "img_07", mingzi: "劉備 (玄德)", name: "Liu Bei (Xuande)" },
+  { img: "img_08", mingzi: "關羽 (雲長)", name: "Guan Yu (Yunchang)" },
+  { img: "img_09", mingzi: "張飛 (益德)", name: "Zhang Fei (Yide)" },
+  { img: "img_10", mingzi: "趙雲 (子龍)", name: "Zhao Yun (Zilong)" },
+  { img: "img_10", mingzi: "諸葛亮 (孔明)", name: "Zhuge Liang (Kongming)" },
+  { img: "img_10", mingzi: "馬超 (孟起)", name: "Ma Chao (Mengqi)" },
+  { img: "img_10", mingzi: "劉協 (伯和)", name: "Liu Xie (Bohe)" },
 ];
-const Leadership = [
-  { img: "img_12", title: "Nathaniel Burke", designation: "Co-Founder" },
-  { img: "img_13", title: "Maurice Craig", designation: "Co-Founder" },
-  { img: "img_14", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_15", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_16", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_17", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_18", title: "Viola George", designation: "Co-Founder" },
+
+const Wei = [
+  { img: "img_12", mingzi: "曹操 (孟德)", name: "Cao Cao (Mengde)" },
+  { img: "img_12", mingzi: "曹丕 (子桓)", name: "Cao Pi (Zihuan)" },
+  { img: "img_12", mingzi: "司馬懿 (仲達)", name: "Sima Yi (Zhongda)" },
 ];
-const Designer = [
-  { img: "img_07", title: "Maurice Craig", designation: "Co-Founder" },
-  {
-    img: "img_08",
-    title: "Duane Cain",
-    designation: "Senior Product Desogner",
-  },
-  { img: "img_09", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_10", title: "Maurice Craig", designation: "Co-Founder" },
-  {
-    img: "img_11",
-    title: "Nina Walters",
-    designation: "Senior Product Desogner",
-  },
+
+const Wu = [
+  { img: "img_07", mingzi: "孫堅 (文臺)", name: "Sun Jian (Wentai)" },
 ];
-const Developer = [
-  { img: "img_12", title: "Nathaniel Burke", designation: "Co-Founder" },
-  { img: "img_13", title: "Maurice Craig", designation: "Co-Founder" },
-  { img: "img_14", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_15", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_16", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_17", title: "Viola George", designation: "Co-Founder" },
-];
-const Marketing = [
-  {
-    img: "img_08",
-    title: "Duane Cain",
-    designation: "Senior Product Desogner",
-  },
-  { img: "img_09", title: "Viola George", designation: "Co-Founder" },
-  { img: "img_10", title: "Maurice Craig", designation: "Co-Founder" },
-  {
-    img: "img_11",
-    title: "Nina Walters",
-    designation: "Senior Product Desogner",
-  },
-  { img: "img_12", title: "Nathaniel Burke", designation: "Co-Founder" },
+
+const Other = [
+  { img: "img_12", mingzi: "董卓 (仲穎)", name: "Dong Zhuo (Zhongying)" },
 ];
 
 const CharacterData = () => {
@@ -79,39 +33,39 @@ const CharacterData = () => {
         <TabList className="controls d-flex align-items-center justify-content-center mb-100 md-mb-60">
           <Tab>
             <button type="button" className="control">
-              All
+              Shu-Han
             </button>
           </Tab>
           <Tab>
             <button type="button" className="control">
-              Leadership
+              Wei
             </button>
           </Tab>
           <Tab>
             <button type="button" className="control">
-              Designer
+              Wu
             </button>
           </Tab>
           <Tab>
             <button type="button" className="control">
-              Developer
+              Other
             </button>
           </Tab>
-          <Tab>
+          {/* <Tab>
             <button type="button" className="control">
               Marketing
             </button>
-          </Tab>
+          </Tab> */}
         </TabList>
         {/* End .Tablist */}
         <TabPanel>
           <div className="mixitUp-container">
-            {All.map((item, i) => (
+            {ShuHan.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
                   <img src={`images/media/${item.img}.png`} alt="media" />
-                  <h4>{item.title}</h4>
-                  <strong>{item.designation}</strong>
+                  <h4>{item.mingzi}</h4>
+                  <strong>{item.name}</strong>
                 </div>
                 {/* /.team-member */}
               </Link>
@@ -125,12 +79,12 @@ const CharacterData = () => {
         </TabPanel>
         <TabPanel>
           <div className="mixitUp-container">
-            {Leadership.map((item, i) => (
+            {Wei.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
                   <img src={`images/media/${item.img}.png`} alt="media" />
-                  <h4>{item.title}</h4>
-                  <strong>{item.designation}</strong>
+                  <h4>{item.mingzi}</h4>
+                  <strong>{item.name}</strong>
                 </div>
                 {/* /.team-member */}
               </Link>
@@ -144,12 +98,12 @@ const CharacterData = () => {
         </TabPanel>
         <TabPanel>
           <div className="mixitUp-container">
-            {Designer.map((item, i) => (
+            {Wu.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
                   <img src={`images/media/${item.img}.png`} alt="media" />
-                  <h4>{item.title}</h4>
-                  <strong>{item.designation}</strong>
+                  <h4>{item.mingzi}</h4>
+                  <strong>{item.name}</strong>
                 </div>
                 {/* /.team-member */}
               </Link>
@@ -163,31 +117,12 @@ const CharacterData = () => {
         </TabPanel>
         <TabPanel>
           <div className="mixitUp-container">
-            {Developer.map((item, i) => (
+            {Other.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
                   <img src={`images/media/${item.img}.png`} alt="media" />
-                  <h4>{item.title}</h4>
-                  <strong>{item.designation}</strong>
-                </div>
-                {/* /.team-member */}
-              </Link>
-            ))}
-
-            <div className="gap"></div>
-            <div className="gap"></div>
-            <div className="gap"></div>
-          </div>
-          {/* /.mixitUp-container */}
-        </TabPanel>
-        <TabPanel>
-          <div className="mixitUp-container">
-            {Marketing.map((item, i) => (
-              <Link to="/team-details-v1" className="mix" key={i}>
-                <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
-                  <h4>{item.title}</h4>
-                  <strong>{item.designation}</strong>
+                  <h4>{item.mingzi}</h4>
+                  <strong>{item.name}</strong>
                 </div>
                 {/* /.team-member */}
               </Link>
