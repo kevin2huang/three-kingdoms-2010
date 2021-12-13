@@ -12,11 +12,11 @@ const Characters = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-11 m-auto">
-              <h2 className="font-rubik">Discover the characters</h2>
+              <h2 className="font-rubik">三国英雄</h2>
             </div>
             <div className="col-xl-9 col-lg-11 m-auto">
               <p className="font-rubik">
-                some text
+                Heroes of the Three Kingdoms
               </p>
             </div>
           </div>
