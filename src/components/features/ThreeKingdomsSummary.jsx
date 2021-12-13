@@ -4,17 +4,17 @@ const Kingdoms = [
   {
     hanzi: "蜀漢",
     eng: "Shu-Han",
-    description: `Create customized popups and show the message at the lorem`,
+    description: `Founded by Liu Bei, Shu Han become an empire when it conquered Cao Wei in 236.`,
   },
   {
     hanzi: "魏",
     eng: "Wei",
-    description: `Collect website leads with embedded forms and integrate easily.`,
+    description: `Founded by Cao Cao's son, Cao Pi, when he proclaimed himself emperor in 220.`,
   },
   {
     hanzi: "呉",
     eng: "Wu",
-    description: `Send welcome email to your new subscribers with a code.`,
+    description: `Founded by Sun Jian's son, Sun Quan, when he proclaimed himself emperor in 229.`,
   },
 ];
 
