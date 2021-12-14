@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CharacterData from "./CharacterData";
+import CharacterTabs from "./CharacterTabs";
 
 const Characters = () => {
   return (
@@ -29,7 +29,7 @@ const Characters = () => {
 			===================================================== */}
       <div className="team-section-one">
         <div className="container">
-          <CharacterData />
+          <CharacterTabs />
         </div>
       </div>
       {/* /.team-section-one */}
