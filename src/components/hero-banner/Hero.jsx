@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ThreeKingdomsSummary from "../features/ThreeKingdomsSummary";
 import PosterImage from "../../assets/images/poster.jpeg"
 import WordBank from "../word-bank/WordBank";
