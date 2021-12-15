@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "../components/header/Header";
 import Hero from "../components/hero-banner/Hero";
@@ -15,9 +14,6 @@ const Homepage = () => {
         <title>Three Kingdoms 2010</title>
       </Helmet>
       {/* End Page SEO Content */}
-
-      <Header />
-      {/* End HeaderFour */}
 
       <Hero />
       {/* End Hero Banner Four */}
