@@ -24,12 +24,11 @@ const Homepage = () => {
      =============================================
 				Fancy Text Block
 		============================================== */}
-      <div className="fancy-text-block-nineteen mt-250 mb-200 md-mt-150 md-mb-150">
+      {/* <div className="fancy-text-block-nineteen mt-250 mb-200 md-mt-150 md-mb-150">
         <div className="container">
           <About />
         </div>
       </div>
-      {/* End  .fancy-text-block-nineteen*/}
 
       <div className="fancy-feature-nine">
         <img
@@ -70,18 +69,15 @@ const Homepage = () => {
               <span>3 simple & easy step to launch.</span>
             </h2>
           </div>
-          {/* End title */}
-
           <FeatureNine />
         </div>
-      </div>
-      {/* /.fancy-feature-nine */}
+      </div> */}
 
       {/* 
      =============================================
 				Fqa Text Block
 		============================================== */}
-      <div className="fancy-text-block-six overflow-hidden mt-250 md-mt-200">
+      {/* <div className="fancy-text-block-six overflow-hidden mt-250 md-mt-200">
         <div className="container">
           <div className="row align-items-center">
             <div
@@ -95,7 +91,6 @@ const Homepage = () => {
                   <span>Why you should</span> choose us?
                 </h2>
               </div>
-              {/* End title */}
             </div>
 
             <div
@@ -111,18 +106,16 @@ const Homepage = () => {
                   className="shapes shape-one"
                 />
               </div>
-              {/* /.illustration-holder */}
             </div>
           </div>
         </div>
-      </div>
-      {/* /.why should you choose us */}
+      </div> */}
 
       {/* 
      =============================================
 				Pricing Section Three
 		============================================== */}
-      <div className="pricing-section-three mt-250 mb-200 md-mt-150 md-mb-150">
+      {/* <div className="pricing-section-three mt-250 mb-200 md-mt-150 md-mb-150">
         <img
           src="images/shape/107.svg"
           alt="shape"
@@ -163,17 +156,14 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          {/* /.pricing-table-area-three */}
         </div>
-        {/* ./container */}
-      </div>
-      {/* /.pricing-section-three */}
+      </div> */}
 
       {/* 
      =============================================
 				Client Feedback Slider
 		============================================== */}
-      <div className="client-feedback-slider-three mb-250 ">
+      {/* <div className="client-feedback-slider-three mb-250 ">
         <div className="container">
           <div className="title-style-five text-center mb-80 md-mb-50">
             <div className="row">
@@ -184,9 +174,7 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          {/* End title */}
         </div>
-        {/* /.container */}
         <img
           src="images/media/img_59.png"
           alt="media"
@@ -217,7 +205,7 @@ const Homepage = () => {
           alt="media"
           className="shapes shape_6"
         />
-      </div>
+      </div> */}
       {/* /.client-feedback-slider-three */}
 
       {/*
@@ -226,12 +214,11 @@ const Homepage = () => {
      =============================================
 			Footer Four
 		============================================== */}
-      <footer className="theme-footer-four">
+      {/* <footer className="theme-footer-four">
         <div className="top-footer">
           <div className="container">
             <FooterFour />
           </div>
-          {/* /.container */}
         </div>
 
         <div className="container">
@@ -248,9 +235,8 @@ const Homepage = () => {
               inc.
             </p>
           </div>
-          {/* /.bottom-footer */}
         </div>
-      </footer>
+      </footer> */}
       {/* /.theme-footer-four */}
     </div>
   );
