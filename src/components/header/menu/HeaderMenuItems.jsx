@@ -39,28 +39,21 @@ const HeaderMenuItems = () => {
           ))}
         </ul>
       </li>
-      <li className="nav-item position-static">
+      <li className="nav-item">
         <a className="nav-link" href="/#">
-          <Link to="/map">
-            Map
-          </Link>
-        </a>
-      </li>
-      <li className="nav-item position-static">
-        <a className="nav-link" href="/#">
-        <Link to="/transcripts">
-          Transcripts
+        <Link to="/episodes">
+          Episodes
         </Link>
         </a>
       </li>
-      <li className="nav-item position-static">
+      <li className="nav-item">
         <a className="nav-link" href="/#">
-        <Link to="/transcripts">
+        <Link to="/quotes">
           Quotes
         </Link>
         </a>
       </li>
-      <li className="nav-item position-static">
+      <li className="nav-item">
         <a className="nav-link" href="/#">
           <Link to="/about">
             About
