@@ -3037,9 +3037,13 @@ body .theme-btn-thirteen:hover {
 .team-section-one .team-member {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  padding-top: 15px;
+  border-radius: 25px;
 }
 .team-section-one .team-member:hover {
-  transform: translateY(-5px);
+  // transform: translateY(-5px);
+  // box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .team-section-one .team-member img {
   width: 180px;
@@ -13434,6 +13438,7 @@ body .theme-btn-thirteen:hover {
 /*-------------------- Fancy Portfolio Two ---------------------*/
 .mixitUp-container {
   overflow: hidden;
+  padding-top: 24px;
 }
 .po-control-one button {
   display: inline-block;
