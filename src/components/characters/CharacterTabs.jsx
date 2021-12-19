@@ -40,7 +40,7 @@ const CharacterTabs = () => {
             {ShuHan.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={item.img} alt="media" />
                   <h4>{item.mingzi}</h4>
                   <strong>{item.name}</strong>
                 </div>
@@ -59,7 +59,7 @@ const CharacterTabs = () => {
             {Wei.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={item.img} alt="media" />
                   <h4>{item.mingzi}</h4>
                   <strong>{item.name}</strong>
                 </div>
@@ -78,7 +78,7 @@ const CharacterTabs = () => {
             {Wu.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={item.img} alt="media" />
                   <h4>{item.mingzi}</h4>
                   <strong>{item.name}</strong>
                 </div>
@@ -97,7 +97,7 @@ const CharacterTabs = () => {
             {Other.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={item.img} alt="media" />
                   <h4>{item.mingzi}</h4>
                   <strong>{item.name}</strong>
                 </div>
