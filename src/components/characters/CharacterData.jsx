@@ -1,9 +1,42 @@
+// Shu-Han
+import GuanYu from "../../assets/images/heroes/shu-han/guanyu.png";
+import LiuBiao from "../../assets/images/heroes/shu-han/liubiao.png";
+import WangYun from "../../assets/images/heroes/shu-han/wangyun.png";
+import ZhangFei from "../../assets/images/heroes/shu-han/zhangfei.png";
 
+// Wei
+import CaoCao from "../../assets/images/heroes/wei/caocao.png";
+import CaoHong from "../../assets/images/heroes/wei/caohong.png";
+import CaoSong from "../../assets/images/heroes/wei/caosong.png";
+import LiuDai from "../../assets/images/heroes/wei/liudai.png";
+import LuBoShe from "../../assets/images/heroes/wei/luboshe.png";
+import XiahouYuan from "../../assets/images/heroes/wei/xiahouyuan.png";
+import YueJin from "../../assets/images/heroes/wei/yuejin.png";
+import CaiMao from "../../assets/images/heroes/wei/caimao.png";
+
+// Wu
+import SunJian from "../../assets/images/heroes/wu/sunjian.png";
+import SunCe from "../../assets/images/heroes/wu/sunce.png";
+import ChengPu from "../../assets/images/heroes/wu/chengpu.png";
+import HuangGai from "../../assets/images/heroes/wu/huanggai.png";
+import HanDang from "../../assets/images/heroes/wu/handang.png";
+
+// Other 
+import DongZhuo from "../../assets/images/heroes/other/dongzhuo.png";
+import LuBu from "../../assets/images/heroes/other/lubu.png";
+import DiaoChan from "../../assets/images/heroes/other/diaochan.png";
+import ChengGong from "../../assets/images/heroes/other/chenggong.png";
+import GongsunZan from "../../assets/images/heroes/other/gongsunzan.png";
+import GuoSi from "../../assets/images/heroes/other/guosi.png";
+import HuaXiong from "../../assets/images/heroes/other/huaxiong.png";
+import LiJue from "../../assets/images/heroes/other/lijue.png";
+import LiRu from "../../assets/images/heroes/other/liru.png";
+import YuanShao from "../../assets/images/heroes/other/yuanshao.png";
 
 export const ShuHan = [
   { img: "img_07", mingzi: "劉備 (玄德)", name: "Liu Bei (Xuande)" },
-  { img: "img_08", mingzi: "關羽 (雲長)", name: "Guan Yu (Yunchang)" },
-  { img: "img_09", mingzi: "張飛 (益德)", name: "Zhang Fei (Yide)" },
+  { img: GuanYu, mingzi: "關羽 (雲長)", name: "Guan Yu (Yunchang)" },
+  { img: ZhangFei, mingzi: "張飛 (益德)", name: "Zhang Fei (Yide)" },
   { img: "img_10", mingzi: "趙雲 (子龍)", name: "Zhao Yun (Zilong)" },
   { img: "img_10", mingzi: "諸葛亮 (孔明)", name: "Zhuge Liang (Kongming)" },
   { img: "img_10", mingzi: "馬超 (孟起)", name: "Ma Chao (Mengqi)" },
@@ -25,7 +58,7 @@ export const ShuHan = [
   { img: "img_10", mingzi: "孫乾 (公祐)", name: "Sun Qian (Gongyou)" },
   { img: "img_12", mingzi: "曹節", name: "Cao Jie" },
   { img: "img_10", mingzi: "徐庶 (元直)", name: "Xu Shu (Yuanzhi)" },
-  { img: "img_10", mingzi: "劉表 (景升)", name: "Liu Biao (Jingsheng)" },
+  { img: LiuBiao, mingzi: "劉表 (景升)", name: "Liu Biao (Jingsheng)" },
   { img: "img_10", mingzi: "陶謙 (恭祖)", name: "Tao Qian (Gongzu)" },
   { img: "img_10", mingzi: "曹豹", name: "Cao Bao" },
   { img: "img_10", mingzi: "董承", name: "Dong Cheng" },
@@ -37,7 +70,7 @@ export const ShuHan = [
   { img: "img_10", mingzi: "劉琦", name: "Liu Qi" },
   { img: "img_10", mingzi: "劉璋 (季玉)", name: "Liu Zhang (Jiyu)" },
   { img: "img_10", mingzi: "麋夫人", name: "Lady Mi" },
-  { img: "img_10", mingzi: "王允 (子师)", name: "Wang Yun (Zishi)" },
+  { img: WangYun, mingzi: "王允 (子师)", name: "Wang Yun (Zishi)" },
   { img: "img_10", mingzi: "嚴顏", name: "Yan Yan" },
   { img: "img_10", mingzi: "楊儀 (威公)", name: "Yang Yi (Weigong)" },
   { img: "img_10", mingzi: "張松 (子喬)", name: "Zhang Song (Ziqiao)" },
@@ -47,7 +80,7 @@ export const ShuHan = [
 ];
 
 export const Wei = [
-  { img: "img_12", mingzi: "曹操 (孟德)", name: "Cao Cao (Mengde)" },
+  { img: CaoCao, mingzi: "曹操 (孟德)", name: "Cao Cao (Mengde)" },
   { img: "img_12", mingzi: "曹丕 (子桓)", name: "Cao Pi (Zihuan)" },
   { img: "img_12", mingzi: "曹彰 (子文)", name: "Cao Zhang (Ziwen)" },
   { img: "img_12", mingzi: "曹植 (子建)", name: "Cao Zhi (Zijian)" },
@@ -56,11 +89,12 @@ export const Wei = [
   { img: "img_12", mingzi: "荀彧 (文若)", name: "Xun Yu (Wenruo)" },
   { img: "img_12", mingzi: "曹叡 (元仲)", name: "Cao Rui (Yuanzhong)" },
   { img: "img_12", mingzi: "曹芳 (蘭卿)", name: "Cao Fang (Lanqing)" },
-  { img: "img_12", mingzi: "夏侯淵 (妙才)", name: "Xiahou Yuan (Miaocai)" },
+  { img: XiahouYuan, mingzi: "夏侯淵 (妙才)", name: "Xiahou Yuan (Miaocai)" },
+  { img: YueJin, mingzi: "樂進 (文謙)", name: "Yue Jin (Wenqian)" },
   { img: "img_12", mingzi: "許褚 (仲康)", name: "Xu Chu (Zhongkang)" },
   { img: "img_12", mingzi: "徐晃 (公明)", name: "Xu Huang (Gongming)" },
   { img: "img_12", mingzi: "夏侯惇 (元讓)", name: "Xiahou Dun (Yuanrang)" },
-  { img: "img_12", mingzi: "曹洪 (子廉)", name: "Cao Hong (Zilian)" },
+  { img: CaoHong, mingzi: "曹洪 (子廉)", name: "Cao Hong (Zilian)" },
   { img: "img_12", mingzi: "張遼 (文遠)", name: "Zhang Liao (Wenyuan)" },
   { img: "img_12", mingzi: "曹仁 (子孝)", name: "Cao Ren (Zixiao)" },
   { img: "img_12", mingzi: "于禁 (文則)", name: "Yu Jin (Wenze)" },
@@ -74,7 +108,7 @@ export const Wei = [
   { img: "img_12", mingzi: "牛金", name: "Niu Jin" },
   { img: "img_12", mingzi: "曹真 (子丹)", name: "Cao Zhen (Zidan)" },
   { img: "img_12", mingzi: "曹爽 (昭伯)", name: "Cao Shuang (Zhaobo)" },
-  { img: "img_12", mingzi: "蔡瑁 (德珪)", name: "Cai Mao (Degui)" },
+  { img: CaiMao, mingzi: "蔡瑁 (德珪)", name: "Cai Mao (Degui)" },
   { img: "img_12", mingzi: "孫禮 (德達)", name: "Sun Li (Deda)" },
   { img: "img_12", mingzi: "吳質 (季重)", name: "Wu Zhi (Jizhong)" },
   { img: "img_12", mingzi: "司馬師 (子元)", name: "Sima Shi (Ziyuan)" },
@@ -90,8 +124,9 @@ export const Wei = [
   { img: "img_12", mingzi: "韓玄", name: "Han Xuan" },
   { img: "img_12", mingzi: "蔣幹", name: "Jiang Gan" },
   { img: "img_12", mingzi: "李豐 (安國)", name: "Li Feng (Anguo)" },
-  { img: "img_12", mingzi: "劉岱 (公山)", name: "Liu Dai (Gongshan)" },
-  { img: "img_12", mingzi: "呂伯奢", name: "Lü Boshe" },
+  { img: LiuDai, mingzi: "劉岱 (公山)", name: "Liu Dai (Gongshan)" },
+  { img: CaoSong, mingzi: "曹嵩 (巨高)", name: "Cao Song (Jugao)" },
+  { img: LuBoShe, mingzi: "呂伯奢", name: "Lü Boshe" },
   { img: "img_12", mingzi: "王朗 (景興)", name: "Wang Lang (Jingxing)" },
   { img: "img_12", mingzi: "郭皇后", name: "Empress Guo" },
   { img: "img_12", mingzi: "楊修 (德祖)", name: "Yang Xiu (Dezu)" },
@@ -100,18 +135,18 @@ export const Wei = [
 ];
 
 export const Wu = [
-  { img: "img_07", mingzi: "孫堅 (文臺)", name: "Sun Jian (Wentai)" },
-  { img: "img_07", mingzi: "孫策 (伯符)", name: "Sun Ce (Bofu)" },
+  { img: SunJian, mingzi: "孫堅 (文臺)", name: "Sun Jian (Wentai)" },
+  { img: SunCe, mingzi: "孫策 (伯符)", name: "Sun Ce (Bofu)" },
   { img: "img_07", mingzi: "孫權 (仲謀)", name: "Sun Quan (Zhongmou)" },
   { img: "img_07", mingzi: "周瑜 (公瑾)", name: "Zhou Yu (Gongjin)" },
   { img: "img_07", mingzi: "魯肅 (子敬)", name: "Lu Su (Zijing)" },
   { img: "img_07", mingzi: "陸遜 (伯言)", name: "Lu Xun (Boyan)" },
-  { img: "img_07", mingzi: "程普 (德謀)", name: "Cheng Pu (Demou)" },
+  { img: ChengPu, mingzi: "程普 (德謀)", name: "Cheng Pu (Demou)" },
   { img: "img_07", mingzi: "甘寧 (興霸)", name: "Gan Ning (Xingba)" },
-  { img: "img_07", mingzi: "黃蓋 (公覆)", name: "Huang Gai (Gongfu)" },
+  { img: HuangGai, mingzi: "黃蓋 (公覆)", name: "Huang Gai (Gongfu)" },
   { img: "img_07", mingzi: "呂蒙 (子明)", name: "Lü Meng (Ziming)" },
   { img: "img_07", mingzi: "周泰 (幼平)", name: "Zhou Tai (Youping)" },
-  { img: "img_07", mingzi: "韓當 (義公)", name: "Han Dang (Yigong)" },
+  { img: HanDang, mingzi: "韓當 (義公)", name: "Han Dang (Yigong)" },
   { img: "img_07", mingzi: "張昭 (子布)", name: "Zhang Zhao (Zibu)" },
   { img: "img_07", mingzi: "丁奉 (承淵)", name: "Ding Feng (Chengyuan)" },
   { img: "img_07", mingzi: "潘璋 (文珪)", name: "Pan Zhang (Wengui)" },
@@ -131,15 +166,15 @@ export const Wu = [
 ];
 
 export const Other = [
-  { img: "img_12", mingzi: "董卓 (仲穎)", name: "Dong Zhuo (Zhongying)" },
-  { img: "img_12", mingzi: "呂布 (奉先)", name: "Lu Bu (Fengxian)" },
-  { img: "img_12", mingzi: "貂蟬", name: "Diao Chan" },
-  { img: "img_12", mingzi: "郭汜", name: "Guo Si" },
-  { img: "img_12", mingzi: "華雄", name: "Hua Xiong" },
-  { img: "img_12", mingzi: "李傕 (稚然)", name: "Li Jue (Zhiran)" },
-  { img: "img_12", mingzi: "李儒 (文優)", name: "Li Ru (Wenyou)" },
-  { img: "img_12", mingzi: "陳宮 (公臺)", name: "Chen Gong (Gongtai)" },
-  { img: "img_12", mingzi: "公孫瓚 (伯珪)", name: "Gongsun Zan (Bogui)" },
+  { img: DongZhuo, mingzi: "董卓 (仲穎)", name: "Dong Zhuo (Zhongying)" },
+  { img: LuBu, mingzi: "呂布 (奉先)", name: "Lu Bu (Fengxian)" },
+  { img: DiaoChan, mingzi: "貂蟬", name: "Diao Chan" },
+  { img: GuoSi, mingzi: "郭汜", name: "Guo Si" },
+  { img: HuaXiong, mingzi: "華雄", name: "Hua Xiong" },
+  { img: LiJue, mingzi: "李傕 (稚然)", name: "Li Jue (Zhiran)" },
+  { img: LiRu, mingzi: "李儒 (文優)", name: "Li Ru (Wenyou)" },
+  { img: ChengGong, mingzi: "陳宮 (公臺)", name: "Chen Gong (Gongtai)" },
+  { img: GongsunZan, mingzi: "公孫瓚 (伯珪)", name: "Gongsun Zan (Bogui)" },
   { img: "img_12", mingzi: "郭圖", name: "Guo Tu" },
   { img: "img_12", mingzi: "韓遂 (文約)", name: "Han Sui (Wenyue)" },
   { img: "img_12", mingzi: "華佗 (元化)", name: "Hua Tuo (Yuanhua)" },
@@ -153,7 +188,7 @@ export const Other = [
   { img: "img_12", mingzi: "許攸 (子遠)", name: "Xu You (Ziyuan)" },
   { img: "img_12", mingzi: "張任", name: "Zhang Ren" },
   { img: "img_12", mingzi: "張溫 (伯慎)", name: "Zhang Wen (Boshen)" },
-  { img: "img_12", mingzi: "袁紹 (本初)", name: "Yuan Shao (Benchu)" },
+  { img: YuanShao, mingzi: "袁紹 (本初)", name: "Yuan Shao (Benchu)" },
   { img: "img_12", mingzi: "袁譚 (顯思)", name: "Yuan Tan (Xiansi)" },
   { img: "img_12", mingzi: "袁熙 (顯奕)", name: "Yuan Xi (Xianyi)" },
   { img: "img_12", mingzi: "顔良", name: "Yan Liang" },
