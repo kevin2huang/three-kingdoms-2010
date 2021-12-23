@@ -62,11 +62,11 @@ const Hero = () => {
                 {headerSentenceEnglish2}<br/>
                 {headerSentenceEnglish3}
               </p>
-              <div className="icon-center">
+              {/* <div className="icon-center">
                 <div className="mouse-scroll" data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="200"></div>
-              </div>
+              </div> */}
             </div>
               
             {/* /.text-wrapper */}
